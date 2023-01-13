@@ -1,0 +1,39 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+class Area
+{
+private:
+	int length;
+	int breadth;
+	int side;
+	char fig[20];
+public:
+	Area()
+	{
+		length=5;
+		breadth=10;
+		side=5;
+	}
+	
+int getarea()
+{
+	
+	cout<<"Rectangle or square";
+	cin.getline(fig,20);
+	if (fig='Rectangle' || fig='rectangle')
+	{
+		return length*breadth;
+	}
+	else
+	{
+		return side*side;
+	}
+}
+};
+int main()
+{
+	Area box;
+	cout<<box.getarea();
+}
